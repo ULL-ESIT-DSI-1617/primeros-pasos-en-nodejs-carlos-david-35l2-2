@@ -33,35 +33,3 @@ Como Desplegar una Aplicación Web en iaas.ull.es
 * [David Dorta Acosta](https://alu0100851236.github.io/)
 
 * [Repositorio en github](https://github.com/ULL-ESIT-DSI-1617/primeros-pasos-en-nodejs-carlos-david-35l2-2.git)
-
-
-
-#__README DEL FORK__
-
-## GitBook Boilerplate
-
-### Installation
-
-```shell
-cd ~/code
-
-git clone https://github.com/enten/gitbook-boilerplate.git awesome-project
-
-cd awesome-project
-
-rm -fr .git
-
-vi package.json
-# edit repository.url and repository.wiki
-
-git remote add origin <url>
-
-npm run build
-# or
-# npm run generate-gitbook && npm run generate-wiki
-
-npm run deploy
-# or
-# npm run deploy-gitbook && npm run deploy-wiki
-```
-__Important__: Wiki must be created on Github
