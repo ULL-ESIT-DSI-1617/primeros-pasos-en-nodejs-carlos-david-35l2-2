@@ -4,7 +4,7 @@ var express = require('express');
 var app = express();
 
 //Archivos estaticos css, js, img, html
-app.use(express.static('public'));
+app.use(express.static('.'));
 
 //ruteo
 app.get('/', function(req, res){
@@ -12,5 +12,11 @@ res.sendfile(__dirname + '/index.html');
 });
 
 //escuchar
-app.listen(8080);
-console.log("Servidor Express escuchando en modo %s", app.settings.env);
+var server = app.listen(8080, function () {
+
+  var host = server.address().address
+  var port = server.address().port
+
+  console.log('Example app listening at http://%s:%s', host, port)
+
+})
